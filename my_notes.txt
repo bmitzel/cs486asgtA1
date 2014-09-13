@@ -1,0 +1,35 @@
+Pseudocode:
+
+open random_points.txt for reading
+read the contents of random_points.txt into an array of 10,000 Vec3s
+close random_points.txt
+
+open random_planes.txt for reading
+read the contents of random_planes.txt into an array of 5 Planes
+close random_planes.txt
+
+for each plane:
+	open planeXA.txt for writing
+	open planeXB.txt for writing
+
+	for each point:
+		determine if the point is above, on, or below the plane
+		if the point is above the plane:
+			print the point to planeXA.txt
+		else if the point is below the plane:
+			print the point to planeXB.txt
+
+	close planeXA.txt
+	close planeXB.txt
+
+
+Design:
+
+class Vec3
+class Plane
+	public Vec3 normal
+	public float offset
+	public float CheckPoint( const Vec3& p )
+		returns positive for a point above the plane
+		returns 0 for a point on the plane
+		returns negative for a point below the plane
