@@ -2,7 +2,7 @@
  * Programmer: Brian Mitzel
  * Email: bmitzel@csu.fullerton.edu
  * Course: CPSC 486
- * Assignment: A - Points, Planes, Rendering
+ * Assignment: A - Points, Planes, Rendering - Part 1
  * Due Date: 9/2/2014
  *
  * Filename: points_planes.cpp
